@@ -22,6 +22,16 @@ import { CommonModule } from '@angular/common';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    BaseLayoutComponent,
+    HeaderComponent,
+    FooterComponent,
+    FundsCardComponent,
+    CardBankComponent,
+    LogoComponent,
+    UserDataComponent,
+    MovementsTableComponent
   ]
 })
 export class ComponentsModule {}
