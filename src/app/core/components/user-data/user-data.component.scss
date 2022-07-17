@@ -1,0 +1,10 @@
+@import 'src/app/utils/styles/variables';
+
+:host {
+    text-align: right;
+    color: $gray;
+}
+
+.user-name {
+    font-weight: bold;
+}
