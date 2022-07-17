@@ -1,1 +1,12 @@
-<p>header works!</p>
+<div class="logo">
+    <app-logo></app-logo>
+    <span class="logo-label">Powered by Conecta</span>
+</div>
+<div class="button-section">
+    <button class="menu-option" *ngFor="let menuOption of menuOptions;" [class.selected]="menuOption.isSelected">
+        {{ menuOption.text }}
+    </button>
+</div>
+<div class="user-info-section">
+    <app-user-data></app-user-data>
+</div>

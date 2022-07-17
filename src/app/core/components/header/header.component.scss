@@ -1,0 +1,43 @@
+@import 'src/app/utils/styles/variables';
+
+:host {
+    display: flex;
+    height: 4.4rem;
+    padding: 0px 1.3rem;
+}
+
+div {
+    width: 33%;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    .logo-label {
+        font-size: 0.9rem;
+        margin-left: 0.4rem;
+        color: $gray;
+    }
+}
+
+.button-section {
+    justify-content: center;
+
+    .menu-option {
+        border: 0;
+        height: 100%;
+        min-width: 10rem;
+        color: $medium-gray;
+        font-size: 1.1rem;
+        font-weight: bold;
+        background-color: white;
+    
+        &.selected {
+            background-color: $light-gray;
+            color: $green;
+        }
+    }
+}
+
+.user-info-section {
+    justify-content: right;
+}
