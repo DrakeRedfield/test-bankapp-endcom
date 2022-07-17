@@ -14,7 +14,5 @@ This project is a Technical Test created by **Angel Antonio Barco Alfaro**
 
 ## Keep in touch
 
-## Stay in touch
-
 - Author - [Angel Antonio Barco](https://drakeredfield.github.io/)
 - Social - [LinkedIn](https://www.linkedin.com/in/angel-antonio-barco-alfaro-b36b6316a/)
