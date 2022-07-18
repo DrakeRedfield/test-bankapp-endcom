@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { HomeRoutingModule } from './home-routing.module';
 import { ComponentsModule } from 'src/app/core/components/components.module';
+import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -13,7 +14,8 @@ import { ComponentsModule } from 'src/app/core/components/components.module';
   imports: [
     CommonModule,
     ComponentsModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    NgbModalModule
   ]
 })
 export class HomeModule { }

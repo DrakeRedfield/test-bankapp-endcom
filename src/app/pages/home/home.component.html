@@ -8,7 +8,7 @@
             </div>
             <div class="card-content">
                 <app-card-bank *ngFor="let cardData of cardList;" [cardData]="cardData"></app-card-bank>
-                <div class="add-new-card">
+                <div class="add-new-card" (click)="addNewCard()">
                     <span>AGREGAR TARJETA</span>
                     <img src="assets/svg/plus-circle-thin.svg" alt="New Card">
                 </div>
