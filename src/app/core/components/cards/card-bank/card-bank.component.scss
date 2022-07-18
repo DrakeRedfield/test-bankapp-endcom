@@ -1,0 +1,49 @@
+@import 'src/app/utils/styles/variables', 'src/app/utils/styles/components/card';
+
+:host {
+    display: block;
+    font-size: 0.9rem;
+}
+
+.container {
+    @include create-card($green);
+
+    padding: 1rem;
+    color: white;
+    width: 20rem;
+    height: 9rem;
+
+    &.deactivate {
+        background-color: $disable-green;
+    }
+}
+
+.card-header {
+    display: flex;
+    margin-bottom: 0.6rem;
+    justify-content: space-between;
+
+    .total-mount {
+        font-weight: bold;
+    }
+}
+
+.card-data {
+    & > div {
+        margin-bottom: 0.3rem;
+        font-weight: bold;
+    }
+}
+
+.card-footer {
+    text-align: right;
+
+    .card-icon {
+        width: 2.5rem;
+        display: inline-block;
+
+        img {
+            width: 100%;
+        }
+    }
+}

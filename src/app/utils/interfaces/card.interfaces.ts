@@ -3,3 +3,12 @@ export interface IFundCard {
     text: string;
     isTextGray?: boolean;
 }
+
+export interface ICardBank {
+  tarjeta: string;
+  nombre: string;
+  saldo: number;
+  estado: string;
+  tipo: string;
+  id: number;
+}

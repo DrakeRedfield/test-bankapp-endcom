@@ -9,6 +9,7 @@ import { UserDataComponent } from './user-data/user-data.component';
 import { MovementsTableComponent } from './movements-table/movements-table.component';
 import { CommonModule } from '@angular/common';
 import { FundsSectionComponent } from './funds-section/funds-section.component';
+import { PipesModule } from "../pipes/pipes.module";
 
 @NgModule({
     declarations: [
@@ -23,7 +24,8 @@ import { FundsSectionComponent } from './funds-section/funds-section.component';
     FundsSectionComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    PipesModule
   ],
   exports: [
     BaseLayoutComponent,
