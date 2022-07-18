@@ -1,3 +1,3 @@
-<span class="user-name">Octavio Martinez</span>
+<span class="user-name"> {{ accountData?.nombre || 'Sign in' }} </span>
 <br>
-<span>Último inicio de sesión 18/07/2019</span>
+<span>Último inicio {{ accountData?.ultimaSesion || '----' }}</span>

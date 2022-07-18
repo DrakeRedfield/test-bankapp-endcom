@@ -7,11 +7,11 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let rowData of mockedData;">
-            <td class="col-2"> {{ rowData.fecha }} </td>
-            <td class="col-8"> {{ rowData.descripcion }} </td>
-            <td [attr.class]="'col-2 amount ' + rowData.tipo">
-                {{ rowData.monto | currency }}
+        <tr *ngFor="let rowData of movementsList;">
+            <td class="col-2"> {{ rowData?.fecha }} </td>
+            <td class="col-8"> {{ rowData?.descripcion }} </td>
+            <td [attr.class]="'col-2 amount ' + rowData?.tipo">
+                {{ (rowData?.monto || 0) | currency }}
             </td>
         </tr>
     </tbody>
