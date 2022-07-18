@@ -1,0 +1,31 @@
+@import 'src/app/utils/styles/variables', 'src/app/utils/styles/components/card';
+
+:host {
+    @include create-card(white);
+    
+    display: flex;
+    padding: 1.5rem;
+}
+
+div {
+    width: 100%;
+    font-weight: bold;
+
+    &.left-side {
+        max-width: 7rem;
+        margin-right: 0.5rem;
+        color: $blue;
+        font-size: 0.7rem;
+    }
+
+    &.right-side {
+        margin-right: 0.2rem;
+        color: $green;
+        font-size: 1.2rem;
+        text-align: right;
+
+        &.gray {
+            color: $gray;
+        }
+    }
+}

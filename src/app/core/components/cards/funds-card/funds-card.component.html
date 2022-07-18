@@ -1,1 +1,6 @@
-<p>funds-card works!</p>
+<div class="left-side">
+    {{ cardData?.text }}
+</div>
+<div class="right-side" [class.gray]="cardData?.isTextGray">
+    {{ cardData?.mount | currency }}
+</div>

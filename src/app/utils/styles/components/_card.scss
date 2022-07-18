@@ -1,0 +1,8 @@
+@import '../variables';
+
+@mixin create-card($bg-color) {
+    min-width: 4rem;
+    border-radius: 0.3rem;
+    padding: 0.2rem 0.4rem;
+    background-color: $bg-color;
+}
