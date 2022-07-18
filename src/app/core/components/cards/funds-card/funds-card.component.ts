@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { IFundCard } from '../../../../utils/interfaces/card.interfaces';
 
 @Component({
   selector: 'app-funds-card',
   templateUrl: './funds-card.component.html',
   styleUrls: ['./funds-card.component.scss']
 })
-export class FundsCardComponent implements OnInit {
+export class FundsCardComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  @Input() cardData!: IFundCard;
 
 }
