@@ -38,6 +38,8 @@ export class NewCardModalComponent implements OnInit {
       return;
     }
 
+    alert('Los valores del formulario son: ' + JSON.stringify(this.newCardForm.value));
+
     this.closeModal()
   }
 
