@@ -13,6 +13,10 @@ div {
 }
 
 .logo {
+    app-logo {
+        @extend %green-logo;
+    }
+
     .logo-label {
         font-size: 0.9rem;
         margin-left: 0.4rem;
