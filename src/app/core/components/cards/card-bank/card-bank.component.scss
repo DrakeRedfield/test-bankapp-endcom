@@ -1,0 +1,61 @@
+@import 'src/app/utils/styles/base';
+
+:host {
+    display: block;
+    font-size: 0.9rem;
+}
+
+.container {
+    @include create-card($green);
+
+    padding: 1rem;
+    color: white;
+    width: 15rem;
+    height: 9rem;
+
+    &.deactivate {
+        background-color: $disable-green;
+    }
+}
+
+.card-bank-header {
+    display: flex;
+    margin-bottom: 0.6rem;
+    justify-content: space-between;
+
+    .total-mount {
+        font-weight: bold;
+    }
+}
+
+.card-bank-data {
+    & > div {
+        margin-bottom: 0.3rem;
+        font-weight: bold;
+    }
+}
+
+.card-bank-footer {
+    text-align: right;
+
+    .card-icon {
+        width: 2.5rem;
+        display: inline-block;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@include bp-large {
+    .container {
+        width: 17rem;
+    }
+}
+
+@include bp-xlarge {
+    .container {
+        width: 20rem;
+    }
+}

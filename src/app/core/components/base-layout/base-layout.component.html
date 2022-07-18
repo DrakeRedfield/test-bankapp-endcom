@@ -1,6 +1,7 @@
-<div class="container">
-    <div class="header-section">
-        <app-header></app-header>
-    </div>
-    <ng-content select='[slot="funds-section"]'></ng-content>
+<div class="header-section">
+    <app-header></app-header>
+</div>
+<ng-content select='[slot="funds-section"]'></ng-content>
+<div class="main-content">
+    <ng-content select='[slot="main-content"]'></ng-content>
 </div>

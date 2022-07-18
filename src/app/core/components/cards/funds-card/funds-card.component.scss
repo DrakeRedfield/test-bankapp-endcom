@@ -1,4 +1,4 @@
-@import 'src/app/utils/styles/variables', 'src/app/utils/styles/components/card';
+@import 'src/app/utils/styles/base';
 
 :host {
     @include create-card(white);
@@ -10,6 +10,8 @@
 div {
     width: 100%;
     font-weight: bold;
+    display: flex;
+    align-items: center;
 
     &.left-side {
         max-width: 7rem;
@@ -22,7 +24,7 @@ div {
         margin-right: 0.2rem;
         color: $green;
         font-size: 1.2rem;
-        text-align: right;
+        justify-content: right;
 
         &.gray {
             color: $gray;

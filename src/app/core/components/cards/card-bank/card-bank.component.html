@@ -1,1 +1,16 @@
-<p>card-bank works!</p>
+<div class="container" [class.deactivate]="cardData?.estado === 'desactivada'">
+    <div class="card-bank-header">
+        <div class="status"> {{ cardData?.estado | titlecase }} </div>
+        <div class="total-mount"> {{ cardData?.saldo | currency}} </div>
+    </div>
+    <div class="card-bank-data">
+        <div class="card-number"> {{ (cardData?.tarjeta || '') | cardNumber }} </div>
+        <div class="card-name"> {{ cardData?.nombre }} </div>
+        <div class="card-type"> {{ cardData?.tipo | titlecase }} </div>
+    </div>
+    <div class="card-bank-footer">
+        <div class="card-icon">
+            <img src="assets/Mastercard-Logo.png" alt="Master Card Logo">
+        </div>
+    </div>
+</div>

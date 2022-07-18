@@ -1,0 +1,56 @@
+@import 'src/app/utils/styles/base';
+
+:host {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+    
+    th, td {
+        text-align: left;
+        padding: 0.5rem 1rem;
+    }
+
+    tr {
+        border-bottom: 0.1rem solid $medium-gray;
+        color: $medium-gray;
+    }
+
+    thead {
+        tr {
+            border-bottom: 0.2rem solid $medium-gray;
+        }
+    }
+
+    tbody tr .amount{
+        color: $green;
+
+        &.cargo {
+            color: $red;
+        }
+    }
+}
+
+.table-fixed{
+    width: 100%;
+
+    tbody{
+        height:20rem;
+        overflow-y:auto;
+        width: 100%;
+    }
+
+    thead,tbody,tr,td,th{
+      display:block;
+    }
+
+    tbody, thead {
+        tr {
+            display: flex;
+        }
+    }
+}
+  
