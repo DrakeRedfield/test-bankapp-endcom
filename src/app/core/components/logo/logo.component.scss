@@ -11,20 +11,12 @@
     border-width: 0.4rem;
     border-style: solid;
     border-radius: 50%;
-    border-color: $green;
+    border-color: inherit;
     margin-right: 0.7rem;
-
-    &.gray {
-        border-color: $gray;
-    }
 }
 
 .text-logo {
     font-size: 1.3rem;
-    color: $green;
+    color: inherit;
     margin-top: -0.2rem;
-
-    &.gray {
-        color: $gray;
-    }
 }
