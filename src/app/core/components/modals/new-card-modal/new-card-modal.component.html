@@ -1,0 +1,87 @@
+<div class="row header">
+    <app-logo></app-logo>
+    <span>Agregar tarjeta</span>
+</div>
+<form autocomplete="off" [formGroup]="newCardForm">
+    <div class="row">
+        <div class="col-12">
+            <input 
+                type="text"
+                [class.invalid-input]="isFieldInvalid('cardNumber')"
+                formControlName="cardNumber"
+                placeholder="Número de tarjeta"
+            >
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <input 
+                type="text"
+                [class.invalid-input]="isFieldInvalid('accountNumber')"
+                formControlName="accountNumber"
+                placeholder="Cuenta"
+            >
+        </div>
+        <div class="col-6">
+            <input 
+                type="text"
+                [class.invalid-input]="isFieldInvalid('issuer')"
+                formControlName="issuer"
+                placeholder="Issuer"
+            >
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <input type="text"
+            [class.invalid-input]="isFieldInvalid('cardName')"
+                formControlName="cardName"
+                placeholder="Nombre de la tarjeta"
+            >
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <input 
+                type="text"
+                [class.invalid-input]="isFieldInvalid('status')"
+                formControlName="status"
+                placeholder="Estatus"
+            >
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <input 
+                type="text"
+                [class.invalid-input]="isFieldInvalid('marca')"
+                formControlName="marca"
+                placeholder="Marca"
+            >
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <input 
+                type="text"
+                [class.invalid-input]="isFieldInvalid('fund')"
+                formControlName="fund"
+                placeholder="Saldo"
+            >
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <input 
+                type="text"
+                [class.invalid-input]="isFieldInvalid('accountType')"
+                formControlName="accountType"
+                placeholder="Tipo de cuenta"
+            >
+        </div>
+    </div>
+</form>
+<div class="row footer">
+    <button class="modal-button" (click)="closeModal()">Cancelar</button>
+    <button type="submit" class="modal-button" (click)="onSubmit()">Agregar tarjeta</button>
+</div>

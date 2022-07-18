@@ -10,6 +10,8 @@ import { MovementsTableComponent } from './movements-table/movements-table.compo
 import { CommonModule } from '@angular/common';
 import { FundsSectionComponent } from './funds-section/funds-section.component';
 import { PipesModule } from "../pipes/pipes.module";
+import { NewCardModalComponent } from './modals/new-card-modal/new-card-modal.component';
+import { ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
     declarations: [
@@ -21,11 +23,13 @@ import { PipesModule } from "../pipes/pipes.module";
     LogoComponent,
     UserDataComponent,
     MovementsTableComponent,
-    FundsSectionComponent
+    FundsSectionComponent,
+    NewCardModalComponent
   ],
   imports: [
     CommonModule,
-    PipesModule
+    PipesModule,
+    ReactiveFormsModule
   ],
   exports: [
     BaseLayoutComponent,

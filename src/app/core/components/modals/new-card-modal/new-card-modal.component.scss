@@ -1,0 +1,70 @@
+@import 'src/app/utils/styles/base';
+
+:host {
+    padding: 1.5rem 2.5rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    padding-bottom: 1rem;
+
+    app-logo {
+        color: $green;
+    }
+    span {
+        font-size: 1.3rem;
+        color: $gray;
+    }
+}
+
+.row {
+    margin-bottom: 1rem;
+
+    input {
+        @include create-card(white);
+
+        width: 100%;
+        padding: 1rem 1rem;
+        color: $gray;
+        border: 0.15rem solid $medium-gray;
+        outline: none;
+
+        &:focus {
+            color: $green;
+            border-color: $green;
+
+            &::placeholder {
+                color: $green;
+            }
+        }
+
+        &.invalid-input {
+            border-color: $red;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+
+    .modal-button {
+        width: 10rem;
+        border: 0;
+        color: white;
+        background-color: lightgray;
+        padding: 1rem;
+
+        &:nth-of-type(1) {
+            margin-right: 1rem;
+        }
+
+        &:nth-of-type(2) {
+            background-color: $green;
+        }
+    }
+}
