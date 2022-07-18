@@ -1,0 +1,43 @@
+@import 'src/app/utils/styles/variables', 'src/app/utils/styles/components/card';
+
+.main-content {
+    height: 100%;
+    display: flex;
+
+    & > div {
+        padding: 1.5rem;
+
+        .label-section {
+            color: $gray;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .card-section {
+        app-card-bank {
+            margin-bottom: 1.5rem;
+        }
+
+        .add-new-card {
+            @include create-card(white);
+
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            justify-content: space-between;
+            color: $green;
+            border-style: dashed;
+            border-width: 0.15rem;
+            border-color: $green;
+
+            img {
+                width: 2.5rem;
+            }
+        }
+    }
+
+    .history-section {
+        width: 100%;
+    }
+}

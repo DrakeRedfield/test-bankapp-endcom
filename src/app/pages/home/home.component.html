@@ -1,3 +1,21 @@
 <app-base-layout>
     <app-funds-section slot="funds-section"></app-funds-section>
+
+    <div class="main-content" slot="main-content">
+        <div class="card-section">
+            <div class="label-section">
+                <span>MIS CUENTAS</span>
+            </div>
+            <app-card-bank *ngFor="let cardData of dataMocked;" [cardData]="cardData"></app-card-bank>
+            <div class="add-new-card">
+                <span>AGREGAR TARJETA</span>
+                <img src="assets/svg/plus-circle-thin.svg" alt="New Card">
+            </div>
+        </div>
+        <div class="history-section">
+            <div class="label-section">
+                <span>MOVIMIENTOS</span>
+            </div>
+        </div>
+    </div>
 </app-base-layout>
