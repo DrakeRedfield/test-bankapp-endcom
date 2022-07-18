@@ -8,6 +8,7 @@ import { LogoComponent } from './logo/logo.component';
 import { UserDataComponent } from './user-data/user-data.component';
 import { MovementsTableComponent } from './movements-table/movements-table.component';
 import { CommonModule } from '@angular/common';
+import { FundsSectionComponent } from './funds-section/funds-section.component';
 
 @NgModule({
     declarations: [
@@ -18,7 +19,8 @@ import { CommonModule } from '@angular/common';
     CardBankComponent,
     LogoComponent,
     UserDataComponent,
-    MovementsTableComponent
+    MovementsTableComponent,
+    FundsSectionComponent
   ],
   imports: [
     CommonModule
@@ -31,7 +33,8 @@ import { CommonModule } from '@angular/common';
     CardBankComponent,
     LogoComponent,
     UserDataComponent,
-    MovementsTableComponent
+    MovementsTableComponent,
+    FundsSectionComponent
   ]
 })
 export class ComponentsModule {}
