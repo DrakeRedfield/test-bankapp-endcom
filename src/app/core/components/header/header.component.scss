@@ -1,4 +1,4 @@
-@import 'src/app/utils/styles/variables';
+@import 'src/app/utils/styles/base';
 
 :host {
     display: flex;
@@ -11,11 +11,13 @@ div {
     display: flex;
     align-items: center;
 }
+
 .logo {
     .logo-label {
         font-size: 0.9rem;
         margin-left: 0.4rem;
         color: $gray;
+        display: none;
     }
 }
 
@@ -40,4 +42,12 @@ div {
 
 .user-info-section {
     justify-content: right;
+}
+
+@include bp-large {
+    .logo {
+        .logo-label {
+            display: block;
+        }
+    }
 }

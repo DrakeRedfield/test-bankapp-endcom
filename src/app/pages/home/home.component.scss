@@ -1,8 +1,11 @@
-@import 'src/app/utils/styles/variables', 'src/app/utils/styles/components/card';
+@import 'src/app/utils/styles/base';
 
 .main-content {
     height: 100%;
     display: flex;
+    flex-direction: column;
+    background-color: $light-gray;
+    overflow-y: auto;
 
     & > div {
         padding: 1.5rem;
@@ -15,29 +18,57 @@
     }
 
     .card-section {
-        app-card-bank {
-            margin-bottom: 1.5rem;
-        }
-
-        .add-new-card {
-            @include create-card(white);
-
+        .card-content {
             display: flex;
+            overflow-x: auto;
             align-items: center;
-            padding: 1rem;
-            justify-content: space-between;
-            color: $green;
-            border-style: dashed;
-            border-width: 0.15rem;
-            border-color: $green;
 
-            img {
-                width: 2.5rem;
+            app-card-bank {
+                margin-bottom: 1.5rem;
+                margin-right: 1.5rem;
+            }
+    
+            .add-new-card {
+                @include create-card(white);
+    
+                display: flex;
+                height: 4.7rem;
+                min-width: auto;
+                align-items: center;
+                padding: 1rem;
+                margin-bottom: 1.5rem;
+                justify-content: space-between;
+                color: $green;
+                border-style: dashed;
+                border-width: 0.15rem;
+                border-color: $green;
+    
+                img {
+                    width: 2.5rem;
+                }
             }
         }
     }
 
     .history-section {
         width: 100%;
+    }
+}
+
+@include bp-large {
+    .main-content {
+        flex-direction: row;
+        
+        .card-section {
+            .card-content {
+                display: block;
+                overflow-x: auto;
+    
+                app-card-bank, .add-new-card{
+                    margin-right: 0rem;
+                }
+            }
+        }
+            
     }
 }
